@@ -25,7 +25,7 @@ const ProfileSection = () => {
 
       {/* Profile Image */}
       <motion.img
-        src="public/images/profilepicture.jpeg"
+        src="./images/profilepicture.jpeg"
         alt="Samridh Singh"
         className="rounded-full shadow-lg object-cover w-full h-full z-10 border-4 border-purple-400"
         whileHover={{ scale: 1.1 }}
