@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;  /* Reduced from 8px */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #8B5CF6, #EC4899);
+    border-radius: 2px;  /* Reduced from 4px */
+  }
+
+  /* New utility classes for reduced spacing */
+  .compact-container {
+    @apply py-4 px-3;  /* Reduced padding */
+    min-height: 70vh;  /* Reduced from 80vh */
+  }
+
+  .compact-card {
+    @apply p-3 space-y-2;  /* Reduced padding and spacing */
+  }
+
+  .compact-heading {
+    @apply mb-4 text-2xl;  /* Reduced margin and font size */
+  }
+}
+
+
